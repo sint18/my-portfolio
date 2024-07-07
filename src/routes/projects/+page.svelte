@@ -1,0 +1,8 @@
+<main>
+    <!-- TODO: Complete about page -->
+    <div class="container p-10 mx-auto space-y-20 sm:space-y-28">
+        <h1 class="h1 text-3xl sm:text-5xl">Projects</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-10">
+        </div>
+    </div>
+</main>

@@ -22,7 +22,7 @@
 
 {#if showArrow}
     <button transition:fade={{ delay: 200, duration: 200 }} type="button" class="arrow" on:click={scrollDown}>
-        <span class="border-[5px] border-transparent border-b-primary-800 border-r-primary-800"></span>
+        <span class="border-[5px] border-transparent border-b-primary-800 border-r-primary-800 dark:border-b-primary-100 dark:border-r-primary-100"></span>
         <!--    <span></span>-->
         <!--<span></span>-->
     </button>

@@ -19,7 +19,7 @@
     <footer class="card-footer">
         <div class="flex space-x-4">
             {#each techStack as lang}
-                <span>{lang}</span>
+                <span class="chip variant-filled ">{lang}</span>
             {/each}
         </div>
     </footer>

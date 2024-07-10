@@ -9,7 +9,8 @@
         <h1 class="h1 text-3xl sm:text-5xl">Projects</h1>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-10">
             {#each data.projects as project}
-                <Card title="{project.title}" description="{project.description}" href="#"></Card>
+                <Card title="{project.title}" description="{project.description}" href="#"
+                      techStack={project.techStack}></Card>
             {/each}
         </div>
     </div>

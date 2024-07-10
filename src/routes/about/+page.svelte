@@ -1,6 +1,10 @@
+<script lang="ts">
+    import EmailIcon from 'virtual:icons/mdi/alternate-email'
+    import PhoneIcon from 'virtual:icons/mdi/phone'
+</script>
 <main>
     <!-- TODO: Complete about page -->
-    <div class="container p-10 mx-auto space-y-20 sm:space-y-28">
+    <div class="container p-10 mx-auto space-y-20 sm:space-y-28 h-full">
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-10">
             <h1 class="h1 text-3xl sm:text-5xl">About</h1>
             <div class="col-span-2">
@@ -15,8 +19,24 @@
         </div>
         <div class="space-y-8">
             <h2 class="h2 text-2xl sm:text-4xl">Technologies</h2>
-            <ul class="text-xl font-semibold list-disc px-8">
-                <li>Python (Flask)</li>
+            <ul class="leading-loose text-xl font-semibold list-disc px-4 list-inside">
+                <li>Python - Flask, FastAPI</li>
+                <li>JavaScript - SvelteKit, Node.js</li>
+                <li>PostgreSQL</li>
+                <li>Rust</li>
+            </ul>
+        </div>
+        <div class="space-y-8">
+            <h2 class="h2 text-2xl sm:text-4xl">Contact</h2>
+            <ul class="list leading-loose text-xl font-semibold list-disc px-4 list-inside">
+                <li>
+                    <span><EmailIcon></EmailIcon></span>
+                    <span class="flex-auto">sintlwinhtoo.slh@gmail.com</span>
+                </li>
+                <li>
+                    <span><PhoneIcon></PhoneIcon></span>
+                    <span class="flex-auto">(+44)(0)7510508486</span>
+                </li>
             </ul>
         </div>
     </div>

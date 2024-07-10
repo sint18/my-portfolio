@@ -1,18 +1,6 @@
 <script lang="ts">
     import GitHubLogo from 'virtual:icons/mdi/github'
     import LinkedInLogo from 'virtual:icons/mdi/linkedin'
-    import EmailIcon from 'virtual:icons/mdi/alternate-email'
-
-    interface contactInfo {
-        icon: string
-        text: string
-    }
-
-    const contactInfoList: contactInfo[] = [
-        {icon: "(LinkedIn)", text: "LinkedIn"},
-        {icon: "(GitHub)", text: "GitHub"},
-        {icon: "(Email)", text: "Email"},
-    ]
 </script>
 <footer>
     <div class="container mx-auto p-10 space-y-5">

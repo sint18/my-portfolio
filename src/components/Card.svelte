@@ -2,7 +2,7 @@
     export let title: string
     export let href: string
     export let description: string
-    export let techStack: string[]
+    export let tags: string[]
     export let imageUrl: string
 
 </script>
@@ -20,7 +20,7 @@
     </section>
     <footer class="card-footer">
         <div class="flex flex-wrap gap-4">
-            {#each techStack as lang}
+            {#each tags as lang}
                 <span class="chip variant-filled">{lang}</span>
             {/each}
         </div>

@@ -39,8 +39,8 @@
                                 title={project.title}
                                 description={project.description}
                                 href={project.slug}
-                                techStack={project.techStack}
-                                imageUrl={project.imageUrl}
+                                tags={project.tags}
+                                imageUrl={project.coverImage.asset.url}
                         ></Card>
                     {/each}
                 </div>

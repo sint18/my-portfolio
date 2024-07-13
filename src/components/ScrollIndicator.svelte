@@ -14,20 +14,19 @@
 
     onMount(() => {
         window.onscroll = () => {
-            showArrow = window.scrollY <= 800;
+            showArrow = window.scrollY <= 700;
         }
     })
 
 </script>
 
 {#if showArrow}
-    <button transition:fade={{ delay: 200, duration: 200 }} type="button" class="arrow" on:click={scrollDown}>
+    <button in:fade={{ delay: 300, duration: 500 }} out:fade={{delay: 100, duration: 200}} type="button" class="arrow" on:click={scrollDown}>
         <span class="border-[5px] border-transparent border-b-primary-800 border-r-primary-800 dark:border-b-primary-100 dark:border-r-primary-100"></span>
     </button>
 {/if}
 <style>
     .arrow {
-        position: absolute;
         top: 50%;
         left: 50%;
         cursor: pointer;

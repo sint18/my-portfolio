@@ -15,7 +15,8 @@ async function getData() {
 },
   "header": *[_type == "siteSettings"][0] {
     title,
-    personalProfile
+    personalProfile,
+    introduction
   }
 }
 `

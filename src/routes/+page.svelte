@@ -19,9 +19,8 @@
                 <div class="sm:pt-56 pt-48">
                     {#if ready}
                         <div class="space-y-5">
-                            <h1 class="text-4xl sm:text-6xl h1" transition:fade={{delay: 200, duration: 500}}>Hi, I am Sint.</h1>
-                            <p class="text-2xl sm:text-4xl font-semibold" transition:fade={{delay: 300, duration: 500}}>A Software Engineer | Web Developer based in
-                                London.</p>
+                            <h1 class="text-4xl sm:text-6xl h1" transition:fade={{delay: 200, duration: 500}}>{data.header.title}</h1>
+                            <p class="text-2xl sm:text-4xl font-semibold" transition:fade={{delay: 300, duration: 500}}>{data.header.personalProfile}</p>
                         </div>
                     {/if}
                 </div>

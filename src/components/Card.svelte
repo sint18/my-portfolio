@@ -1,5 +1,6 @@
 <script lang="ts">
     import GitHubLogo from "virtual:icons/mdi/github";
+
     export let title: string
     export let href: string
     export let description: string
@@ -15,14 +16,15 @@
         <div class="flex justify-between flex-wrap gap-4">
             <h2 class="text-2xl">{title}</h2>
 
-<!--            <a class="btn-icon transition ease-in-out delay-150 hover:rotate-12 duration-300" href={href}>-->
-<!--                <span class="text-4xl"><GitHubLogo></GitHubLogo></span>-->
-<!--            </a>-->
-            <a class="btn variant-soft" href={href} target="_blank" rel="noopener noreferer">
-                <span class="text-xl"><GitHubLogo></GitHubLogo></span>
-                <span class="">View on GitHub</span>
-            </a>
-
+            <!--            <a class="btn-icon transition ease-in-out delay-150 hover:rotate-12 duration-300" href={href}>-->
+            <!--                <span class="text-4xl"><GitHubLogo></GitHubLogo></span>-->
+            <!--            </a>-->
+            {#if href}
+                <a class="btn variant-soft" href={href} target="_blank" rel="noopener noreferer">
+                    <span class="text-xl"><GitHubLogo></GitHubLogo></span>
+                    <span class="">View on GitHub</span>
+                </a>
+            {/if}
         </div>
         <article>
             <p>

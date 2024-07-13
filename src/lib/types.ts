@@ -20,6 +20,7 @@ export type AboutMe = {
 export type Header = {
     title: string
     personalProfile: string
+    introduction: string
 }
 
 export type Links = {

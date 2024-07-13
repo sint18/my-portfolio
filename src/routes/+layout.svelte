@@ -24,9 +24,9 @@
     // Components
     import Navbar from "../components/Navbar.svelte";
     import Footer from "../components/Footer.svelte";
-
+    export let data
 </script>
 
 <Navbar></Navbar>
 <slot />
-<Footer></Footer>
+<Footer links={data.links}></Footer>

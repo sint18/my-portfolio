@@ -9,7 +9,7 @@ async function getData() {
   "projects": *[_type == "project" && featured == true] {
   title,
   description,
-  "slug": slug.current,
+  repo,
   "coverImageUrl": coverImage.asset -> url,
   tags[]
 },

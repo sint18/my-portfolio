@@ -4,7 +4,7 @@ async function getProjects() {
     const CONTENT_QUERY = `*[_type == "project"] {
   title,
   description,
-  slug,
+  repo,
   "coverImageUrl": coverImage.asset -> url,
   tags[]
 }

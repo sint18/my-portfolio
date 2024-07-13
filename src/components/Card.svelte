@@ -1,6 +1,5 @@
 <script lang="ts">
     import GitHubLogo from "virtual:icons/mdi/github";
-    import {fade} from "svelte/transition";
     export let title: string
     export let href: string
     export let description: string
@@ -19,7 +18,7 @@
 <!--            <a class="btn-icon transition ease-in-out delay-150 hover:rotate-12 duration-300" href={href}>-->
 <!--                <span class="text-4xl"><GitHubLogo></GitHubLogo></span>-->
 <!--            </a>-->
-            <a class="btn variant-soft" href={href}>
+            <a class="btn variant-soft" href={href} target="_blank" rel="noopener noreferer">
                 <span class="text-xl"><GitHubLogo></GitHubLogo></span>
                 <span class="">View on GitHub</span>
             </a>

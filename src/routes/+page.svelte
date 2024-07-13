@@ -58,7 +58,7 @@
                         <Card
                                 title={project.title}
                                 description={project.description}
-                                href={project.slug}
+                                href={project.repo}
                                 tags={project.tags}
                                 imageUrl={project.coverImageUrl}
                         ></Card>

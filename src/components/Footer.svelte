@@ -5,8 +5,8 @@
     export let links: Links
 </script>
 <footer>
-    <div class="container mx-auto p-10 space-y-5">
-        <div class="flex space-x-5 justify-between">
+    <div class="container mx-auto p-10 sm:px-20 sm:py-10">
+        <div class="flex gap-4 justify-between flex-wrap">
             <div class="flex space-x-5">
                 <a href="{links.github}" target="_blank" rel="noopener noreferrer" class="hover:text-primary-700 text-2xl">
                     <GitHubLogo></GitHubLogo>

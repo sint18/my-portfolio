@@ -16,7 +16,7 @@
 <main>
     <!-- TODO: Get scroll snapping to work -->
     <div class="">
-        <div class="container mx-auto px-8 sm:px-20 mb-28">
+        <div class="container mx-auto px-10 sm:px-20 mb-28">
             <div class="h-[75vh] min-h-[650px] relative">
                 <div class="sm:pt-56 pt-32 space-y-20 mb-20 sm:mb-64">
                     {#if ready}
@@ -50,8 +50,9 @@
                 </div>
             </div>
         </div>
-        <div class="bg-primary-50 dark:bg-transparent">
-            <div class="container mx-auto px-8 sm:px-20 py-14" id="project-showcase">
+        <div class="container mx-auto px-10 sm:px-20">
+            <hr>
+            <div class="py-14" id="project-showcase">
                 <h1 class="h2 text-3xl sm:text-4xl mb-14">Featured Projects.</h1>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
                     {#each data.projects as project}

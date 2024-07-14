@@ -10,7 +10,7 @@
 
 </script>
 <main>
-    <div class="container p-10 mx-auto space-y-20 sm:space-y-28 h-full">
+    <div class="container p-10 sm:px-20 sm:py-10 mx-auto space-y-20 sm:space-y-28 h-full">
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-10">
             {#if data.about.aboutText}
                 {#if ready}

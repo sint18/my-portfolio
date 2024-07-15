@@ -13,8 +13,13 @@
     ]
 
     $: isActive = (href: string) => (href === $page.url.pathname ? "text-secondary-700" : "")
+    $: currentPage = links.filter((item) => item.href === $page.url.pathname)[0].text
 
 </script>
+
+<svelte:head>
+    <title>{currentPage} | Sint's Portfolio</title>
+</svelte:head>
 
 <nav class="p-10 container mx-auto">
     <ul class="flex justify-end space-x-10">

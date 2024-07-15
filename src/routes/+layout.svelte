@@ -24,9 +24,26 @@
     // Components
     import Navbar from "../components/Navbar.svelte";
     import Footer from "../components/Footer.svelte";
+    import {page} from "$app/stores";
+
+    // For Web Analytics - Vercel
+    import { inject } from '@vercel/analytics'
+    inject()
+
+    // For Web Speed Test
+    import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+    injectSpeedInsights();
     export let data
 </script>
 
+<svelte:head>
+    <meta property="description" content="Hi, I'm Sint, a passionate Software Engineer and Web Developer. Explore my projects, skills, and professional journey." />
+<!--    <meta property="og:image" content="">-->
+    <meta property="og:site_name" content="Sint's Portfolio">
+    <meta property="og:title" content="Sint's Portfolio">
+    <meta property="og:description" content="Explore my projects, skills, and professional journey." />
+    <meta property="og:url" content="https://www.sinthtoo.com/">
+</svelte:head>
 <Navbar></Navbar>
 <slot />
 <Footer links={data.links}></Footer>

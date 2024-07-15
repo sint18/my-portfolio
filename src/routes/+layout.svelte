@@ -33,12 +33,15 @@
     // For Web Speed Test
     import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
     injectSpeedInsights();
+
+    import SocialCard from '$lib/static/social-card.png'
     export let data
 </script>
 
 <svelte:head>
+<!--    TODO: Optimize for seo with sanity -->
     <meta property="description" content="Hi, I'm Sint, a passionate Software Engineer and Web Developer. Explore my projects, skills, and professional journey." />
-<!--    <meta property="og:image" content="">-->
+    <meta property="og:image" content="{SocialCard}">
     <meta property="og:site_name" content="Sint's Portfolio">
     <meta property="og:title" content="Sint's Portfolio">
     <meta property="og:description" content="Explore my projects, skills, and professional journey." />

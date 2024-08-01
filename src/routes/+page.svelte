@@ -45,7 +45,7 @@
                         </div>
                     {/if}
                 </div>
-                <div class="absolute bottom-0 left-0 w-full text-center">
+                <div class="absolute bottom-0 left-0 w-full text-center h-1">
                     <ScrollIndicator></ScrollIndicator>
                 </div>
             </div>
@@ -62,6 +62,7 @@
                                 href={project.repo}
                                 tags={project.tags}
                                 imageUrl={project.coverImageUrl}
+                                slug={project.slug}
                         ></Card>
                     {/each}
                 </div>

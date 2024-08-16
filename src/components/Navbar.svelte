@@ -21,8 +21,8 @@
     <title>{currentPage} | Sint's Portfolio</title>
 </svelte:head>
 
-<nav class="p-10 container mx-auto">
-    <ul class="flex justify-end space-x-10">
+<nav class="container mx-auto p-10 sm:px-20">
+    <ul class="flex justify-end gap-x-6 sm:gap-x-10">
         {#each links as link }
             <NavItem text={link.text} href={link.href} activeClass={isActive(link.href)}></NavItem>
         {/each}

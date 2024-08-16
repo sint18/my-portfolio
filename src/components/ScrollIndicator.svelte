@@ -10,6 +10,7 @@
         target.scrollIntoView({
             behavior: "smooth"
         })
+        console.log(showArrow)
     }
 
     onMount(() => {

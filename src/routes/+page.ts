@@ -10,6 +10,7 @@ async function getData() {
   title,
   description,
   repo,
+  "slug": slug.current,
   "coverImageUrl": coverImage.asset -> url,
   tags[]
 },

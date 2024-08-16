@@ -24,7 +24,6 @@
     // Components
     import Navbar from "../components/Navbar.svelte";
     import Footer from "../components/Footer.svelte";
-    import {page} from "$app/stores";
 
     // For Web Analytics - Vercel
     import { inject } from '@vercel/analytics'

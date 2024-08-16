@@ -4,7 +4,7 @@
     // Highlight JS
 	import hljs from 'highlight.js/lib/core';
 	import 'highlight.js/styles/github-dark.css';
-    import { storeHighlightJs } from '@skeletonlabs/skeleton';
+    import {AppBar, AppShell, storeHighlightJs} from '@skeletonlabs/skeleton';
 	import xml from 'highlight.js/lib/languages/xml'; // for HTML
 	import css from 'highlight.js/lib/languages/css';
 	import javascript from 'highlight.js/lib/languages/javascript';
@@ -34,6 +34,16 @@
     import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
     injectSpeedInsights();
 
+    import { initializeStores, Modal, type ModalComponent } from '@skeletonlabs/skeleton';
+    initializeStores();
+
+    import ProjectDetailModal from '../components/ProjectDetail.svelte';
+
+    const modalRegistry: Record<string, ModalComponent> = {
+        // Set a unique modal ID, then pass the component reference
+        projectDetailModal: {ref: ProjectDetailModal}
+    }
+
     import SocialCard from '$lib/static/social-card.png'
     export let data
 </script>
@@ -47,6 +57,20 @@
     <meta property="og:description" content="Explore my projects, skills, and professional journey." />
     <meta property="og:url" content="https://www.sinthtoo.com/">
 </svelte:head>
-<Navbar></Navbar>
-<slot />
-<Footer links={data.links}></Footer>
+<Modal components={modalRegistry}></Modal>
+<!--<Navbar></Navbar>-->
+<!--<slot />-->
+<!--<Footer links={data.links}></Footer>-->
+<AppShell>
+    <svelte:fragment slot="pageHeader">
+        <AppBar background="bg-transparent" padding="-p-4" gap="gap-0">
+            <svelte:fragment slot="trail">
+                <Navbar></Navbar>
+            </svelte:fragment>
+        </AppBar>
+    </svelte:fragment>
+    <slot></slot>
+    <svelte:fragment slot="pageFooter">
+        <Footer links={data.links}></Footer>
+    </svelte:fragment>
+</AppShell>

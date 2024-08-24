@@ -15,14 +15,10 @@
     <section class="p-4 space-y-4">
         <div class="flex justify-between flex-wrap gap-4">
             <h2 class="text-2xl">{title}</h2>
-
-            <!--            <a class="btn-icon transition ease-in-out delay-150 hover:rotate-12 duration-300" href={href}>-->
-            <!--                <span class="text-4xl"><GitHubLogo></GitHubLogo></span>-->
-            <!--            </a>-->
             {#if href}
                 <a class="btn variant-soft" href={href} target="_blank" rel="noopener noreferer">
                     <span class="text-xl"><GitHubLogo></GitHubLogo></span>
-                    <span class="">View on GitHub</span>
+                    <span class="">See the Code</span>
                 </a>
             {/if}
         </div>

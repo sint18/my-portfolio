@@ -2,7 +2,7 @@ import {client} from "$lib/sanity";
 import type {Header, Project} from "$lib/types";
 
 /**
- * Requests projects data and header data from Sentry server
+ * Requests projects data and header data from Sanity server
  */
 async function getData() {
     const CONTENT_QUERY = `{

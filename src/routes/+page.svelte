@@ -56,14 +56,7 @@
                 <h1 class="h2 text-3xl sm:text-4xl mb-14">Featured Projects.</h1>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
                     {#each data.projects as project}
-                        <Card
-                                title={project.title}
-                                description={project.description}
-                                href={project.repo}
-                                tags={project.tags}
-                                imageUrl={project.coverImageUrl}
-                                slug={project.slug}
-                        ></Card>
+                        <Card project={project}></Card>
                     {/each}
                 </div>
                 <!--                <a class="btn variant-filled" href="projects">More Projects</a>-->

@@ -6,6 +6,7 @@ async function getProjects() {
   description,
   repo,
   "coverImageUrl": coverImage.asset -> url,
+  "slug": slug.current,
   tags[]
 }
 `

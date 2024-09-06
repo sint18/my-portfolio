@@ -21,7 +21,7 @@
                 <div class="lg:pt-56 pt-32 space-y-20 mb-20 sm:mb-64">
                     {#if ready}
                         <div class="space-y-5">
-                            <h1 class="text-4xl sm:text-6xl h1"
+                            <h1 class="text-4xl md:text-6xl h1 bg-clip-text text-transparent bg-gradient-to-r from-primary-700 to-30% to-primary-900"
                                 transition:fade={{delay: 200, duration: 500}}>{data.header.title}</h1>
                             <p class="text-2xl sm:text-4xl font-semibold"
                                transition:fade={{delay: 300, duration: 500}}>{data.header.personalProfile}</p>

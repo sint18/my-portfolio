@@ -62,7 +62,6 @@
                                 href={project.repo}
                                 tags={project.tags}
                                 imageUrl={project.coverImageUrl}
-                                slug={project.slug}
                         ></Card>
                     {/each}
                 </div>

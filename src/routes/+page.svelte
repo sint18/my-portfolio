@@ -18,7 +18,7 @@
     <div class="">
         <div class="container mx-auto px-10 sm:px-20 mb-28">
             <div class="h-[75vh] min-h-[650px] relative">
-                <div class="sm:pt-56 pt-32 space-y-20 mb-20 sm:mb-64">
+                <div class="lg:pt-56 pt-32 space-y-20 mb-20 sm:mb-64">
                     {#if ready}
                         <div class="space-y-5">
                             <h1 class="text-4xl md:text-6xl h1 bg-clip-text text-transparent bg-gradient-to-r from-primary-700 to-30% to-primary-900"

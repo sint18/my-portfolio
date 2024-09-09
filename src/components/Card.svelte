@@ -1,5 +1,6 @@
 <script lang="ts">
     import GitHubLogo from "virtual:icons/mdi/github";
+    import SkillIcons from "./SkillIcons.svelte";
 
     export let title: string
     export let href: string
@@ -29,10 +30,11 @@
         </article>
     </section>
     <footer class="card-footer space-y-4">
-        <div class="flex flex-wrap gap-4">
-            {#each tags as lang}
-                <span class="chip variant-filled">{lang}</span>
-            {/each}
-        </div>
+<!--        <div class="flex flex-wrap gap-4">-->
+<!--            {#each tags as lang}-->
+<!--                <span class="chip variant-filled">{lang}</span>-->
+<!--            {/each}-->
+<!--        </div>-->
+        <SkillIcons skills={tags}></SkillIcons>
     </footer>
 </div>

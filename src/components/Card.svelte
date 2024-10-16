@@ -1,5 +1,6 @@
 <script lang="ts">
     import GitHubLogo from "virtual:icons/mdi/github";
+    import Arrow from "virtual:icons/mdi/arrow-top-right";
     import SkillIcons from "./SkillIcons.svelte";
 
     export let title: string
@@ -7,6 +8,7 @@
     export let description: string
     export let tags: string[]
     export let imageUrl: string
+    export let site: string
 
 </script>
 <div class="card overflow-hidden shadow-md">
@@ -20,6 +22,12 @@
                 <a class="btn variant-soft" href={href} target="_blank" rel="noopener noreferer">
                     <span class="text-xl"><GitHubLogo></GitHubLogo></span>
                     <span class="">See the Code</span>
+                </a>
+            {/if}
+            {#if site}
+                <a class="btn variant-ghost-secondary" href={site} target="_blank" rel="noopener noreferer">
+                    <span class="text-xl"><Arrow></Arrow></span>
+                    <span class="">Visit the Site</span>
                 </a>
             {/if}
         </div>

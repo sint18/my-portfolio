@@ -60,6 +60,7 @@
                                 title={project.title}
                                 description={project.description}
                                 href={project.repo}
+                                site={project.site}
                                 tags={project.tags}
                                 imageUrl={project.coverImageUrl}
                         ></Card>

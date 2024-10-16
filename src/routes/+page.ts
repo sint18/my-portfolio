@@ -10,6 +10,7 @@ async function getData() {
   title,
   description,
   repo,
+  site,
   "coverImageUrl": coverImage.asset -> url,
   tags[]
 },

@@ -9,7 +9,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
             {#each data.projects as project}
                 <Card title="{project.title}" description="{project.description}" href="{project.repo}"
-                      tags={project.tags} imageUrl="{project.coverImageUrl}"></Card>
+                      tags={project.tags} imageUrl="{project.coverImageUrl}" site="{project.site}"></Card>
             {/each}
         </div>
     </div>

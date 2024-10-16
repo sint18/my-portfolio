@@ -4,6 +4,7 @@ export type Project = {
     description: string
     tags: string[]
     coverImageUrl: string
+    site: string
 }
 
 type Contact = {
